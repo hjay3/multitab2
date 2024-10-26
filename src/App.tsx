@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Brain, Flask, Zap, Activity, Database } from 'lucide-react';
+import { Brain, FlaskConical, Zap, Activity, Database } from 'lucide-react';
 import Navbar from './components/Navbar';
 import AlphaView from './views/AlphaView';
 import BetaView from './views/BetaView';
@@ -9,7 +9,7 @@ import EpsilonView from './views/EpsilonView';
 
 const tabs = [
   { id: 'alpha', label: 'Alpha', icon: <Brain className="w-5 h-5" /> },
-  { id: 'beta', label: 'Beta', icon: <Flask className="w-5 h-5" /> },
+  { id: 'beta', label: 'Beta', icon: <FlaskConical className="w-5 h-5" /> },
   { id: 'gamma', label: 'Gamma', icon: <Zap className="w-5 h-5" /> },
   { id: 'delta', label: 'Delta', icon: <Activity className="w-5 h-5" /> },
   { id: 'epsilon', label: 'Epsilon', icon: <Database className="w-5 h-5" /> },

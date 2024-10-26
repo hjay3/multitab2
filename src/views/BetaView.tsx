@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Chart, ArrowUp, ArrowDown } from 'lucide-react';
+import { LineChart, ArrowUp, ArrowDown } from 'lucide-react';
 
 const BetaView = () => {
   const stats = [
@@ -22,7 +22,7 @@ const BetaView = () => {
           className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-indigo-500/50 transition-colors"
         >
           <div className="flex items-center justify-between">
-            <Chart className="w-6 h-6 text-indigo-400" />
+            <LineChart className="w-6 h-6 text-indigo-400" />
             <div className={`flex items-center space-x-1 ${stat.up ? 'text-green-400' : 'text-red-400'}`}>
               {stat.up ? <ArrowUp className="w-4 h-4" /> : <ArrowDown className="w-4 h-4" />}
               <span>{stat.change}</span>
